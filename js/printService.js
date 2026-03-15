@@ -57,7 +57,7 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
   container.innerHTML = `
   
     <div class="center">
-      <img src="../imagenes/${logo}" style="max-width:140px;margin-bottom:5px;">
+      <img class="ticket__logo" src="../imagenes/${logo}" alt="${empresa}">
     </div>
 
     <div class="center bold">${empresa}</div>
@@ -66,8 +66,8 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
     <div class="center small">${email}</div>
 
     <hr>
-
-    <div class="center small">
+  
+    <div class="small">
       Ticket: #${numero_fact}<br>
       Mesa: ${mesa}<br>
       Atendido por: ${atendidoPor}<br>

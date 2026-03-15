@@ -29,8 +29,9 @@
 
 /* logo empresa */
 
-.ticket-logo {
+.ticket__logo {
   max-width: 140px;
+  height: 100px;
   margin: 4px auto;
   display: block;
 }
