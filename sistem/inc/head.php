@@ -48,4 +48,5 @@
   <link rel="stylesheet" type="text/css" href="librerias/alertify/css/alertify.css">
   <link rel="stylesheet" type="text/css" href="librerias/alertify/css/themes/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="librerias/fontawesome/css/font-awesome.css">
+  <link rel="stylesheet" href="../css/sweetalert2.min.css">
 </head> 
