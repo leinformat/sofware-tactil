@@ -178,8 +178,7 @@ const editCartItem = (el,item) => {
                             <span class="qty-value">${ item.cantidad }</span>
                             <button class="qty-btn plus">+</button>
                         </div>
-
-                        <button class="edit-btn">Editar</button>
+                        <!-- <button class="edit-btn">Editar</button> -->
                         <button class="delete-btn">Eliminar</button>
                         </div>`;
 
