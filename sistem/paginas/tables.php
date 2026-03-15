@@ -75,7 +75,7 @@
                       <td><?php echo $f['name'];?></td>
                     <td>
                       <a title="Eliminar" href="#" id="del-<?php echo $f["id"];?>" class="btn btn-sm icon fa fa-trash fa-lg"></a>
-                      <a href="#" id="del-<?php echo $f["id"];?>" class="btn btn-sm icon fa fa-edit fa-lg"></a>
+                      <!-- <a href="#" id="del-<?php echo $f["id"];?>" class="btn btn-sm icon fa fa-edit fa-lg"></a> -->
                     </td>
                     <script>
                         $("#del-"+<?php echo $f["id"];?>).click(function(e){

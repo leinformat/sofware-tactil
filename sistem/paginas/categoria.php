@@ -74,15 +74,15 @@
                     <th scope="row"><?php echo $n++;?></th>
                       <td><?php echo $f['nombre_cat'];?></td>
                     <td>
-                      <a title="Eliminar" href="#" id="del-<?php echo $f["id_prestamo"];?>" class="btn btn-sm icon fa fa-trash fa-lg"></a>
-                      <a href="#" id="del-<?php echo $f["id_prestamo"];?>" class="btn btn-sm icon fa fa-edit fa-lg"></a>
+                      <a title="Eliminar" href="#" id="del-<?php echo $f["id_categoria"];?>" class="btn btn-sm icon fa fa-trash fa-lg"></a>
+                      <!-- <a href="#" id="del-<?php echo $f["id_categoria"];?>" class="btn btn-sm icon fa fa-edit fa-lg"></a> -->
                     </td>
                     <script>
-                        $("#del-"+<?php echo $f["id_prestamo"];?>).click(function(e){
+                        $("#del-"+<?php echo $f["id_categoria"];?>).click(function(e){
                           e.preventDefault();
                           p = confirm("Estas seguro? Si Acepta Toda la informacion Relacionada Sera eliminada y no podra Recuperarse");
                           if(p){
-                            window.location="php/query.php?cancelar-prestamo="+<?php echo $f["id_prestamo"];?>;
+                            window.location="php/query.php?eliminar-categoria="+<?php echo $f["id_categoria"];?>;
                           }
 
                         });

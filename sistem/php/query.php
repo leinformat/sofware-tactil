@@ -38,10 +38,10 @@
 		}
 
 	//Buscar Categoria
-	$buscar_cat= mysqli_query($conexion, "SELECT * FROM categorias  ORDER BY nombre_cat ASC");
+	$buscar_cat= mysqli_query($conexion, "SELECT * FROM categorias WHERE state = 1 ORDER BY nombre_cat ASC");
 
 	// Ver Categorias
-	$ver_categorias=mysqli_query($conexion,"SELECT * FROM categorias ORDER BY nombre_cat ASC ");
+	$ver_categorias=mysqli_query($conexion,"SELECT * FROM categorias WHERE state = 1 ORDER BY nombre_cat ASC ");
 
 	// Inventario
 		//Paginacion Exixtente en Inventario
@@ -466,5 +466,16 @@
 			print "<script>window.location='../?mod=tables&exito';</script>";
 		}else{
 			print "<script>window.location='../?mod=tables&error';</script>";
+		}
+	}
+
+	// Borrar mesa
+	if(isset($_GET['eliminar-categoria'])){
+		$sql = "UPDATE categorias SET state = 0 WHERE id_categoria='".$_GET['eliminar-categoria']."'";
+		$con = $conexion->query($sql);
+		if($con !=null){
+			print "<script>window.location='../?mod=categoria&exito';</script>";
+		}else{
+			print "<script>window.location='../?mod=categoria&error';</script>";
 		}
 	}
