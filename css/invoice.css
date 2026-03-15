@@ -82,7 +82,10 @@ td {
   width: 22%;
   text-align: right;
 }
-
+.developer-by{
+  margin: 14px 0;
+  font-size: 11px;
+}
 /* QR */
 #qrContainer {
   margin-top: 10px;

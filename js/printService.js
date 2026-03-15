@@ -101,6 +101,8 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
 
     <div class="center thank-you">Gracias por su compra</div>
     <div id="qrContainer" class="center"></div>
+    <div class="center developer-by">Software desarrollado por Leinformat</div>
+
   `;
 
   const qrText = `FACT:${numero_fact}|FECHA:${fecha}|TOTAL:${total}`;
