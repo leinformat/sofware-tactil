@@ -24,10 +24,10 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
 
     acc.rowsHTML += `
       <tr>
-        <td class="qty semi-bold">${qty}</td>
-        <td class="name semi-bold">${item.nombre_producto}</td>
-        <td class="unit_price semi-bold">${formatMoney(price)}</td>
-        <td class="price semi-bold">${formatMoney(totalItem)}</td>
+        <td class="qty bold">${qty}</td>
+        <td class="name bold">${item.nombre_producto}</td>
+        <td class="unit_price bold">${formatMoney(price)}</td>
+        <td class="price bold">${formatMoney(totalItem)}</td>
       </tr>
     `;
 
@@ -61,13 +61,13 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
     </div>
 
     <div class="center bold">${empresa}</div>
-    <div class="center semi-bold small">${direccion}</div>
-    <div class="center semi-bold small">${telefono}</div>
-    <div class="center semi-bold small">${email}</div>
+    <div class="center bold small">${direccion}</div>
+    <div class="center bold small">${telefono}</div>
+    <div class="center bold small">${email}</div>
 
     <hr>
   
-    <div class="small">
+    <div class="small bold">
       Ticket: #${numero_fact}<br>
       Mesa: ${mesa}<br>
       Atendido por: ${atendidoPor}<br>
@@ -101,7 +101,7 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
 
     <div class="center thank-you">Gracias por su compra</div>
     <div id="qrContainer" class="center"></div>
-    <div class="center developer-by semi-bold">Software desarrollado por Leinformat</div>
+    <div class="center developer-by bold">Software desarrollado por Leinformat</div>
 
   `;
 
