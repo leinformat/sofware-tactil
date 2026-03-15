@@ -24,10 +24,10 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
 
     acc.rowsHTML += `
       <tr>
-        <td class="qty">${qty}</td>
-        <td class="name">${item.nombre_producto}</td>
-        <td class="unit_price">${formatMoney(price)}</td>
-        <td class="price">${formatMoney(totalItem)}</td>
+        <td class="qty semi-bold">${qty}</td>
+        <td class="name semi-bold">${item.nombre_producto}</td>
+        <td class="unit_price semi-bold">${formatMoney(price)}</td>
+        <td class="price semi-bold">${formatMoney(totalItem)}</td>
       </tr>
     `;
 
@@ -61,9 +61,9 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
     </div>
 
     <div class="center bold">${empresa}</div>
-    <div class="center small">${direccion}</div>
-    <div class="center small">${telefono}</div>
-    <div class="center small">${email}</div>
+    <div class="center semi-bold small">${direccion}</div>
+    <div class="center semi-bold small">${telefono}</div>
+    <div class="center semi-bold small">${email}</div>
 
     <hr>
   
@@ -101,7 +101,7 @@ const renderTicket = ({ items = [], totals = {}, company = {}, order = {}, user 
 
     <div class="center thank-you">Gracias por su compra</div>
     <div id="qrContainer" class="center"></div>
-    <div class="center developer-by">Software desarrollado por Leinformat</div>
+    <div class="center developer-by semi-bold">Software desarrollado por Leinformat</div>
 
   `;
 

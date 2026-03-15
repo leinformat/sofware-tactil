@@ -1,5 +1,5 @@
 .payment-panel__ticket {
-  width: 80mm;
+  width: 72mm;
   font-family: monospace;
   font-size: 12px;
   padding: 6px;
@@ -21,6 +21,10 @@
 
 .bold {
   font-weight: bold;
+}
+
+.semi-bold {
+  font-weight: 600;
 }
 
 .small {
@@ -105,7 +109,7 @@ td {
 
   html,
   body {
-    width: 80mm;
+    width: 72mm;
   }
   .center {
     text-align: center;
@@ -120,7 +124,7 @@ td {
     position: absolute;
     left: 0;
     top: 0;
-    width: 80mm;
+    width: 72mm;
   }
 
   @page {
@@ -128,8 +132,4 @@ td {
     margin: 0;
   }
 
-}
-@page {
-  size: 80mm auto;
-  margin: 0;
 }
