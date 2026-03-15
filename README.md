@@ -4,7 +4,7 @@
 
 InfoLm es un sistema de gestión empresarial desarrollado en PHP y MySQL, diseñado para facilitar la administración de inventarios, facturación, gastos y usuarios. Incluye funcionalidades como control de productos, categorías, facturas por pagar, notificaciones de vencimientos y un sistema de login seguro.
 
-Este proyecto está desarrollado por ING. LEONARDO MORALES (LEINFORMAT@GMAIL.COM, +57 322 879 0912).
+Este proyecto está desarrollado por ING. LEONARDO MORALES (LEINFORMAT@GMAIL.COM, +57 311 809 3398).
 
 ## Características Principales
 
@@ -91,6 +91,6 @@ Este proyecto está bajo la Licencia MIT. Consulta el archivo LICENSE para más 
 
 - Desarrollador: ING. LEONARDO MORALES
 - Email: LEINFORMAT@GMAIL.COM
-- Teléfono: +57 311 8093 398
+- Teléfono: +57 311 809 3398
 
 ---
