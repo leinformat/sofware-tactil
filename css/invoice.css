@@ -1,8 +1,8 @@
 .payment-panel__ticket {
-  width: 72mm;
+  width: 76mm; /* antes 72mm */
   font-family: monospace;
   font-size: 12px;
-  padding: 6px;
+  padding: 4px; /* antes 6px */
   z-index: -200;
   position: absolute;
   background: #fff;
@@ -53,7 +53,7 @@ hr {
 table {
   width: 100%;
   border-collapse: collapse;
-  table-layout: fixed;
+  /* table-layout: fixed;  <-- quitado porque rompe columnas en impresoras */
 }
 
 thead th {
@@ -62,44 +62,50 @@ thead th {
 }
 
 td {
-  padding: 2px 0;
+  padding: 1px 0; /* antes 2px */
   vertical-align: top;
   font-size: 11px;
 }
 
 /* columnas */
 .qty {
-  width: 12%;
+  width: 10%;
 }
 
 .name {
-  width: 46%;
+  width: 48%;
   word-break: break-word;
 }
 
 .unit_price {
   width: 20%;
   text-align: right;
+  white-space: nowrap;
 }
 
 .price {
   width: 22%;
   text-align: right;
+  white-space: nowrap;
 }
+
 .developer-by{
   margin: 14px 0;
   font-size: 11px;
 }
+
 /* QR */
 #qrContainer {
   margin-top: 10px;
   display: flex;
   justify-content: center;
 }
+
 .thank-you {
   font-size: 14px;
   font-weight: 700;
 }
+
 /* impresión */
 @media print {
 
@@ -109,8 +115,9 @@ td {
 
   html,
   body {
-    width: 72mm;
+    width: 76mm;
   }
+
   .center {
     text-align: center;
   }
@@ -124,7 +131,7 @@ td {
     position: absolute;
     left: 0;
     top: 0;
-    width: 72mm;
+    width: 76mm;
   }
 
   @page {
