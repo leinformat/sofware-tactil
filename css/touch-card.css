@@ -98,7 +98,7 @@ body {
 
 .items {
   overflow-y: auto;
-  max-height: 52vh;
+  max-height: 43vh;
 }
 
 .item {
@@ -194,7 +194,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
   gap: 15px;
   overflow-y: auto;
-  max-height: 71vh;
+  max-height: 65vh;
   padding: 10px 10px 20px;
 }
 
