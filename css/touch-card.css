@@ -191,7 +191,7 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 174px));
   gap: 15px;
   overflow-y: auto;
   max-height: 65vh;
@@ -209,6 +209,7 @@ body {
   user-select: none;
   transition: 0.15s ease;
   position: relative;
+  justify-content: space-between;
 }
 
 .card:hover {
@@ -228,7 +229,7 @@ body {
 .card-img {
   display: flex;
   justify-content: center;
-  height: 90px;
+  height: 70px;
   margin-bottom: 8px;
 }
 
