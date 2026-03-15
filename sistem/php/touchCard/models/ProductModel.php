@@ -104,7 +104,8 @@ class ProductModel {
 
         $query = "
             SELECT id_categoria, nombre_cat
-            FROM categorias
+            FROM categorias WHERE state = 1
+            ORDER BY nombre_cat ASC
         ";
 
         return mysqli_query($this->db, $query);
