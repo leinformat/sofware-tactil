@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #cfd3d8;
+}
+
+.pos {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* TOP */
+.topbar {
+  height: 48px;
+  background: linear-gradient(#2f3b48, #1f2937);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 14px;
+}
+
+.topbar .left {
+  width: 120px;
+}
+
+.topbar .center {
+  text-align: center;
+}
+
+.topbar .center span {
+  margin: 0 10px;
+}
+
+.topbar .right {
+  width: 120px;
+  text-align: right;
+}
+
+/* MAIN */
+.main-restaurant {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* tables-section */
+.tables-section {
+  background: #fff;
+  padding: 10px;
+}
+
+.tabs {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  color: #fff;
+  transition: all .3s ease;
+}
+.tab--active{
+  box-shadow: 0 0 0 3px #2c3e50;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 220px));
+  gap: 15px;
+  overflow-y: auto;
+  max-height: 78vh;
+  padding: 10px 10px 20px;
+  justify-content: start;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px 10px;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.15s ease;
+  position: relative;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.22);
+}
+
+.card:active {
+  transform: scale(0.97);
+}
+
+/* seleccionado */
+.card.selected {
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.35);
+  background: #f3f3f3;
+}
+
+.card-img {
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  margin-bottom: 8px;
+}
+
+.card-img img {
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card-info {
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.card-name {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+  color:#000;
+}
+
+.card-price {
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+.card-status {
+  border: none;
+  background: #3d3d3d;
+  color: white;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.15s;
+}
+
+.card-status span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.card-status:active {
+  transform: scale(0.96);
+}
+
+.label {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 6px;
+  background: #444;
+  color: #fff;
+  font-size: 13px;
+  white-space: normal;
+  text-transform: capitalize;
+}
+
+.name {
+  margin:0;
+}
+.tab--active {
+  pointer-events: none;
+  user-select: none;
+}
+.card-total {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: #111827;
+    color: #fff;
+    padding: 4px 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 999px;
+    letter-spacing: 0.3px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+header.main-header,
+footer.main-footer,
+.user-panel.first {
+  display: none;
+}
+
+.free-table{
+    background: #ecfdf5;
+    border: 2px solid #22c55e;
+}
+
+.free-table .card-status{
+    background-color: #16a34a;
+}
+.busy-table{
+    background: #fef2f2;
+    border: 2px solid #ef4444;
+}
+.busy-table .card-status{
+    background-color: #dc2626;
+}
+.card:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.top-bar-icon__table{
+  color:#fff;
+}
+.top-bar-icon__table a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #c0392b;
+  border-radius: 12px;
+  padding: 6px;
+  color: #fff;
+  transition: all .3s ease;
+}
+.top-bar-icon__table a:hover{
+  background: #e67e22;
+}
+.top-bar-icon__table svg{
+  width:26px;
+  height:26px;
+  fill:#fff;
+}

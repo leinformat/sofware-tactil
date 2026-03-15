@@ -1,0 +1,153 @@
+.description-block .fa{
+    color:#3C8DBC;
+}
+
+.noHover{
+    pointer-events: none;
+    color:#DD4B39;
+}
+
+.noHover .hr{
+    background-color: #3C8DBC;
+    margin-top: 10px;
+	height: 3px;
+	width: 80%;
+	margin-left: 11%;
+}
+.agg-consulta textarea{
+	height: 200px;
+}
+.save button{
+    outline: none;
+    border:0; 
+    margin-right: 10px;
+}
+
+
+.cssToolTip {
+    position: relative; /* Esta clase tiene que tener posicion relativa */
+    
+}
+
+/* El tooltip */
+.cssToolTip span {
+    background: rgba(20,20,20,0.9) ; 
+    border: 2px solid #87cefa;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #333;
+    color: #87cefa;
+    display: none; /* El tooltip por defecto estara oculto */
+
+    font-size: 12px;
+    
+    max-width: 6000px;
+    width: 100px;
+    height: 30px;
+    position: absolute; /* El tooltip se posiciona de forma absoluta para no modificar el aspezto del resto de la pagina */
+
+    top: 45px; /* Posicion apartir de la parte superior del primer elemento padre con posicion relativa */
+
+    left: -20px; /* Posicion apartir de la parte izquierda del primer elemento padre con posicion relativa */
+
+    z-index: 100; /* Poner un z-index alto para que aparezca por encima del resto de elementos */
+
+}
+/* El tooltip cuando se muestra */
+.cssToolTip:hover span {
+    display: inline; /* Para mostrarlo simplemente usamos display block por ejemplo */
+
+}
+
+/***********************NEW CSS 2024***********************/
+.box-body{
+    padding: 20px;
+}
+.content-wrapper__field-row{
+    margin-top: 20px;
+    padding: 0 10px;
+}
+input:not(.btn),
+select,
+textarea{
+    padding: 0 10px;
+    border-radius:5px;
+    min-height: 40px;
+}
+.content-wrapper__field-submit input,
+.content-wrapper__field-submit button{
+    margin-top: 20px;
+    min-height: 40px;
+}
+.content-wrapper__search-result{
+    position:relative;
+    width:100%;
+    overflow:auto;
+}
+.content-wrapper__search-result.active{
+    height:130px;
+}
+.content-wrapper__table-container{
+    overflow: auto;
+    margin-bottom:20px;
+}
+.content-wrapper__table{
+    min-width: 800px;
+}
+.content-wrapper__table-2{
+    min-width: 900px;
+}
+.content-wrapper__table-container .row:last-child{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+}
+.content-wrapper__table-container .row:last-child > div:last-child{
+    min-width: 800px;
+}
+.content-wrapper__table-container .row:last-child > div:last-child .pagination{
+    padding: 0 30px;
+}
+.content-wrapper__form-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction:column;
+    gap:40px;
+}
+.content-wrapper__inventary-actions-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.content-wrapper__inventary-actions-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:20px;
+}
+.content-wrapper__inventary-actions-container::after,
+.content-wrapper__inventary-actions-container::before{
+    display: none;
+}
+.content-wrapper__form-container::after,
+.content-wrapper__form-container::before{
+    display: none;
+}
+.treeview-menu,
+.treeview > a > span{
+    left:48px !important;
+}
+
+/*RESPONSIVE TABLET*/
+@media(max-width:992px){
+    .content-wrapper__field-submit input{
+        margin-top: 0;
+        min-height: 40px;
+    }
+}
+@media(max-width:768px){
+    .content-wrapper__inventary-actions-container{
+        flex-direction: column;
+    }
+}
