@@ -11,7 +11,7 @@ session_start();
 $inventario="SELECT P.id_producto, P.cod_producto, P.nombre_producto, C.nombre_cat, P.cantidad, P.precio_compra, P.precio_unid FROM productos P JOIN categorias C WHERE P.id_categoria = C.id_categoria AND P.cantidad > 0 AND C.nombre_cat NOT LIKE '%servicio%' AND estado_producto = 1 ORDER BY P.nombre_producto ASC ";
 
 //Listados de Productos Agotados
-$agotadosInv="SELECT P.id_producto, P.cod_producto, P.nombre_producto, C.nombre_cat, P.cantidad, P.precio_compra, P.precio_unid FROM productos P JOIN categorias C WHERE P.id_categoria = C.id_categoria AND P.cantidad <= 0 ORDER BY P.nombre_producto ASC ";
+$agotadosInv="SELECT P.id_producto, P.cod_producto, P.nombre_producto, C.nombre_cat, P.cantidad, P.precio_compra, P.precio_unid FROM productos P JOIN categorias C WHERE P.id_categoria = C.id_categoria AND P.cantidad <= 0 AND estado_producto = 1 ORDER BY P.nombre_producto ASC ";
 
 //SERVICIOS
 $servicios="SELECT P.id_producto, P.cod_producto, P.nombre_producto, C.nombre_cat, P.precio_unid FROM productos P JOIN categorias C WHERE P.id_categoria = C.id_categoria AND C.nombre_cat LIKE '%servicio%' ORDER BY P.nombre_producto ASC ";
