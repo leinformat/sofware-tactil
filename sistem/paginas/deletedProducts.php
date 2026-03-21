@@ -12,7 +12,7 @@
       </h1>
       <ol class="breadcrumb">
         <li><a href="?mod=inicio"><i class="fa fa-dashboard"></i> Inicio</a></li>
-        <li class="active">Inventario(PRODUCTOS AGOTADOS)</li>
+        <li class="active">Productos Eliminados</li>
       </ol>
     </section>
     <!-- Main content -->
@@ -21,7 +21,7 @@
         <div class="col-xs-12 " align="center">
           <div class="box box-info">
             <div class="box-header with-border">
-              <h3 class="box-title">Inventario (PRODUCTOS AGOTADOS)</h3>
+              <h3 class="box-title">Productos Eliminados</h3>
             </div>
             <div class="box-body">
               <a href="?mod=agg_producto"><button type="button" class="btn btn-info">
