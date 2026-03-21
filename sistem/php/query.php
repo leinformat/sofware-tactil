@@ -61,8 +61,7 @@
 	// fIN  Inventario
 
 	// Borrar producto del Inventario
-	if(isset($_GET['borrar_producto']))
-		{
+	if(isset($_GET['borrar_producto'])){
 			$sql = "UPDATE productos SET estado_producto = 0 WHERE id_producto='".$_GET['borrar_producto']."'";
 			$con = $conexion->query($sql);
 			if($con !=null){
@@ -70,7 +69,18 @@
 			}else{
 				print "<script>window.location='../?mod=inventario&pagina=1&error';</script>";
 			}
-		}
+	}
+
+	// Borrar producto del Inventario
+	if(isset($_GET['restore-product'])){
+			$sql = "UPDATE productos SET estado_producto = 1 WHERE id_producto='".$_GET['restore-product']."'";
+			$con = $conexion->query($sql);
+			if($con !=null){
+				print "<script>window.location='../?mod=deletedProducts&pagina=1&exito';</script>";
+			}else{
+				print "<script>window.location='../?mod=deletedProducts&pagina=1&error';</script>";
+			}
+	}
 	// Modificar Inventario
 		if (isset($_POST['modificar_producto'])) {
 			$id   = $_POST['id_producto'];

@@ -43,6 +43,7 @@
           <ul class="treeview-menu">
             <li><a href="?mod=datos_empresa"><i class="fa fa-circle-o text-aqua"></i>Empresa</a></li>
             <li><a href="?mod=adm_usuarios"><i class="fa fa-circle-o text-aqua"></i>Usuarios</a></li>
+            <li><a href="?mod=deletedProducts"><i class="fa fa-circle-o text-aqua"></i>Productos Eliminados</a></li>
             <li><a href="?mod=backup_db"><i class="fa fa-circle-o text-aqua"></i>Backup</a></li>
             <!-- <li><a href="?mod=planillas"><i class="fa fa-circle-o text-aqua"></i>Planillas</a></li> -->
           </ul>
